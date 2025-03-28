@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp"
+    android:radius="8dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 질문 텍스트뷰 -->
+        <TextView
+            android:id="@+id/textViewQuestionCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q: Question Placeholder"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <!-- 답변 텍스트뷰 -->
+        <TextView
+            android:id="@+id/textViewAnswerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A: Answer Placeholder"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- 화면 중앙에 모든 요소를 배치 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 앱 기능 소개 문구 -->
+        <TextView
+            android:id="@+id/textViewMenuIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask, Answer, and Reflect:\n\nSave your questions,\nprovide thoughtful answers,\nand revisit them anytime."
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Ask 버튼 -->
+        <Button
+            android:id="@+id/btnAsk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ask"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Reply 버튼 -->
+        <Button
+            android:id="@+id/btnReply"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- MemoryLane 버튼 -->
+        <Button
+            android:id="@+id/btnMemoryLane"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="MemoryLane"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 앱 권한 및 설정 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MemoryLane"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MemoryLane"
+        tools:targetApi="31">
+
+        <!-- MainActivity - 앱 실행 진입점 -->
+        <activity
+            android:name="com.example.memorylane.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MenuActivity - 메뉴 화면 -->
+        <activity
+            android:name="com.example.memorylane.MenuActivity"
+            android:exported="false" />
+
+        <!-- AskActivity - 질문 입력 화면 -->
+        <activity
+            android:name="com.example.memorylane.AskActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ReplyActivity - 답변 입력 화면 -->
+        <activity
+            android:name="com.example.memorylane.ReplyActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ThinkBackActivity - 아카이빙 화면 -->
+        <activity
+            android:name="com.example.memorylane.MemoryLaneActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>
